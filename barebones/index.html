@@ -1,0 +1,286 @@
+<html>
+<head>
+	<link rel="stylesheet" href="./css/jquery-app-folders.css">
+	
+	<!--Include jQuery-->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	
+	<!--Include jQuery Folders script-->
+	<script src="./js/jquery.app-folders.js"></script>
+	
+	<script>
+	$(function() {
+		$('.app-folders-container').appFolders({
+			opacity: .2, 								// Opacity of non-selected items
+			marginTopAdjust: true, 						// Adjust the margin-top for the folder area based on row selected?
+			marginTopBase: 0, 							// If margin-top-adjust is "true", the natural margin-top for the area
+			marginTopIncrement: 50,						// If margin-top-adjust is "true", the absolute value of the increment of margin-top per row
+			animationSpeed: 200,						// Time (in ms) for transitions
+			URLrewrite: true, 							// Use URL rewriting?
+			URLbase: "/barebones/",						// If URL rewrite is enabled, the URL base of the page where used. Example (include double-quotes): "/services/"
+            internalLinkSelector: ".jaf-internal a"		// a jQuery selector containing links to content within a jQuery App Folder
+		});
+	});
+	</script>
+</head>
+<body>
+<div class="app-folders-container"><!-- This class can change - it is the containing div that should be called in the script (see above).-->
+	
+	<!-- jaf-row 1 -->
+    <div class="jaf-row jaf-container">
+      <div class="folder" id="one">
+        <a href="#">
+          <img src="./images/icon-1.png" />
+          <p>Content 1</p>
+        </a>
+      </div>
+      <div class="folder" id="two">
+        <a href="#">
+          <img src="./images/icon-2.png" />
+          <p>Content 2</p>
+        </a>
+      </div>
+  
+      <div class="folder" id="three">
+        <a href="#">
+          <img src="./images/icon-3.png" />
+          <p>Content 3</p>
+        </a>
+      </div>
+  
+      <div class="folder" id="four">
+        <a href="#">
+          <img src="./images/icon-4.png" />
+          <p>Content 4</p>
+        </a>
+      </div>
+  
+      <div class="folder" id="five">
+        <a href="#">
+          <img src="./images/icon-5.png" />
+          <p>Content 5</p>
+        </a>
+      </div>
+      
+      <br class="clear">
+      
+    </div>
+    <!-- END jaf-row 1 -->
+    
+    <!-- jaf-row 2 -->
+    <div class="jaf-row jaf-container">
+      <div class="folder" id="six">
+        <a href="#">
+          <img src="./images/icon-5.png" />
+          <p>Content 6</p>
+        </a>
+      </div>
+  
+      <div class="folder" id="seven">
+        <a href="#">
+          <img src="./images/icon-4.png" />
+          <p>Content 7</p>
+        </a>
+      </div>
+  
+      <div class="folder" id="eight">
+        <a href="#">
+          <img src="./images/icon-2.png" />
+          <p>Content 8</p>
+        </a>
+      </div>
+  
+      <div class="folder" id="nine">
+        <a href="#">
+          <img src="./images/icon-3.png" />
+          <p>Content 9</p>
+        </a>
+      </div>
+  
+      <div class="folder" id="ten">
+        <a href="#">
+          <img src="./images/icon-1.png" />
+          <p>Content 10</p>
+        </a>
+      </div>
+      
+      <br class="clear">
+      
+    </div>
+    <!-- END jaf-row 2 -->
+    
+    <!-- jaf-row 3 -->
+    <div class="jaf-row jaf-container">
+      <div class="folder" id="eleven">
+        <a href="#">
+          <img src="./images/icon-2.png" />
+          <p>Content 11</p>
+        </a>
+      </div>
+  
+      <div class="folder" id="twelve">
+        <a href="#">
+          <img src="./images/icon-3.png" />
+          <p>Content 12</p>
+        </a>
+      </div>
+  
+      <div class="folder" id="thirteen">
+        <a href="#">
+          <img src="./images/icon-1.png" />
+          <p>Content 13</p>
+        </a>
+      </div>
+  
+      <div class="folder" id="fourteen">
+        <a href="#">
+          <img src="./images/icon-5.png" />
+          <p>Content 14</p>
+        </a>
+      </div>
+  
+      <div class="folder" id="fifteen">
+        <a href="#">
+          <img src="./images/icon-4.png" />
+          <p>Content 15</p>
+        </a>
+      </div>
+    </div>
+    
+    <!-- END jaf-row 3 -->
+    <br class="clear">
+    
+<!-- SUB-CONTENT FOR TOOLBOXES -->
+    <!-- jaf-row Content 1 -->
+    <div class="folderContent one">
+      <div class="jaf-container">
+        <div>
+          <h2>One</h2>
+          <p>Text for one.</p>
+        </div>
+      </div>
+    </div>
+    <div class="folderContent two">
+      <div class="jaf-container">
+        <div>
+          <h2>Two</h2>
+          <p>Text for two.</p>
+        </div>
+      </div>
+    </div>
+    <div class="folderContent three">
+      <div class="jaf-container">
+        <div>
+          <h2>Three</h2>
+          <p>Text for three.</p>
+        </div>
+      </div>
+    </div>
+    <div class="folderContent four">
+      <div class="jaf-container">
+        <div>
+          <h2>Four</h2>
+          <p>Text for four.</p>
+        </div>
+      </div>
+    </div>
+    <div class="folderContent five">
+      <div class="jaf-container">
+        <div>
+          <h2>Five</h2>
+          <p>Text for five.</p>
+        </div>
+      </div>
+    </div>
+    <!-- END jaf-row Content 1 -->
+    
+    <!-- jaf-row Content 2 -->
+    <div class="folderContent six">
+      <div class="jaf-container">
+        <div>
+          <h2>Six</h2>
+          <p>Text for six.</p>
+        </div>
+      </div>
+    </div>
+    <div class="folderContent seven">
+      <div class="jaf-container">
+        <div>
+          <h2>Seven</h2>
+          <p>Text for seven.</p>
+        </div>
+      </div>
+    </div>
+    <div class="folderContent eight">
+      <div class="jaf-container">
+        <div>
+          <h2>Eight</h2>
+          <p>Text for eight.</p>
+        </div>
+      </div>
+    </div>
+    <div class="folderContent nine">
+      <div class="jaf-container">
+        <div>
+          <h2>Nine</h2>
+          <p>Text for nine.</p>
+        </div>
+      </div>
+    </div>
+    <div class="folderContent ten">
+      <div class="jaf-container">
+        <div>
+          <h2>Ten</h2>
+          <p>Text for ten.</p>
+        </div>
+      </div>
+    </div>
+    <!-- END jaf-row Content 2 -->
+    
+    <!--jaf-row Content 3 -->
+    <div class="folderContent eleven">
+      <div class="jaf-container">
+        <div>
+          <h2>Eleven</h2>
+          <p>Text for eleven.</p>
+        </div>
+      </div>
+    </div>
+    <div class="folderContent twelve">
+      <div class="jaf-container">
+        <div>
+          <h2>Twelve</h2>
+          <p>Text for twelve.</p>
+        </div>
+      </div>
+    </div>
+    <div class="folderContent thirteen">
+      <div class="jaf-container">
+        <div>
+          <h2>Thirteen</h2>
+          <p>Text for thirteen.</p>
+        </div>
+      </div>
+    </div>
+    <div class="folderContent fourteen">
+      <div class="jaf-container">
+        <div>
+          <h2>Fourteen</h2>
+          <p>Text for fourteen.</p>
+        </div>
+      </div>
+    </div>
+    <div class="folderContent fifteen">
+      <div class="jaf-container">
+        <div>
+          <h2>Fifteen</h2>
+          <p>Text for fifteen.</p>
+        </div>
+      </div>
+    </div>
+    <!-- END jaf-row Content 3 -->
+  </div>
+</div>
+
+</body>
+  </html>
