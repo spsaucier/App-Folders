@@ -1,0 +1,108 @@
+/* Foundation v2.2.1 http://foundation.zurb.com */
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+body {font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+
+/* -----------------------------------------
+   App Folders
+----------------------------------------- */
+/* Example CSS - Feel free to change or delete if necessary. */
+.app-folders-container { }
+div.folder p {font-size: 10px; margin-bottom: 0;}
+.jaf-container > div.folder { width: 50px; display: inline-block; text-align: center;}
+div.folderContent > .jaf-container { padding: 10px}
+
+/* jQuery App Folders CSS - this is probably vital. Make additions as you please. */
+.jaf-container {
+	position: relative;
+	padding: 0;
+}
+.jaf-row {
+	zoom: 1;
+	width: 90%;
+	margin: 0 auto 12px;
+}
+
+/* Interior */
+.folderContent { 
+	background-image:url("http://farm6.static.flickr.com/5270/5676732818_a63fbd0c4e_z.jpg");
+	margin-bottom: 5px;
+	border-top: 1px solid #888; 
+	border-bottom: 1px solid #888;
+	width: 100%!important;
+	color: #fff;
+	-moz-box-shadow:    inset 0 0 10px #000000;
+	-webkit-box-shadow: inset 0 0 10px #000000;
+	box-shadow:         inset 0 0 10px #000000;
+}
+.folderContent h1, .folderContent h2, .folderContent h3, .folderContent h4, .folderContent h5, .folderContent h6, .folderContent strong {
+	color: #fff;
+}
+.folder {
+	overflow:hidden; 
+	color:white;
+	margin-bottom: 5px;
+}
+.folder > a > p {color: #fff;}
+img.app-icon {
+	border-radius:5px;
+	-moz-border-radius: 5px; 
+	-moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.7); 
+    -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+	background-image:url("http://farm6.static.flickr.com/5270/5676732818_a63fbd0c4e_z.jpg") ; 
+	border:2px solid #ddd; 
+}
+.quote {margin-top: 20px;}
+
+
+/* -----------------------------------------
+   Homepage
+----------------------------------------- */
+
+#iphone {
+	background: url(../images/iPhone-4.png) no-repeat center top;
+	width: 309px;
+	height: 670px;
+	position: relative;
+	margin: 10px auto 0;
+}
+
+.iphone-positioner {
+	top: 106px;
+	width: 255px;
+	margin-left: 27px;
+	position: absolute;
+	height: 346px;
+	overflow: hidden;
+	padding-top: 39px;
+	/*background-image: linear-gradient(bottom, rgb(0,131,196) 29%, rgb(0,168,252) 65%);
+	background-image: -o-linear-gradient(bottom, rgb(0,131,196) 29%, rgb(0,168,252) 65%);
+	background-image: -moz-linear-gradient(bottom, rgb(0,131,196) 29%, rgb(0,168,252) 65%);
+	background-image: -webkit-linear-gradient(bottom, rgb(0,131,196) 29%, rgb(0,168,252) 65%);
+	background-image: -ms-linear-gradient(bottom, rgb(0,131,196) 29%, rgb(0,168,252) 65%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.29, rgb(0,131,196)),
+		color-stop(0.65, rgb(0,168,252))
+	);*/
+	background: url(../images/iPhone-bg.png) left top no-repeat;
+}
+.app-folders-container {
+}
+
+
