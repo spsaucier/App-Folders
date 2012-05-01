@@ -11,3 +11,5 @@ Use jQuery to create iOS-like App Folders on any website. They can contain any c
 • Can contain any content (images, text, video, complex layouts)  
 • Opened Folder can be linked to from other pages  
 • Configurable position changes for nth folder  
+  
+See how to implement at [app-folders.com](http://app-folders.com/ "jQuery App Folders").
