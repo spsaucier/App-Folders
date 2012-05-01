@@ -3,27 +3,27 @@ jQuery App-Folders
 
 Use jQuery to create iOS-like App Folders on any website. They can contain any content and be styled in any way.
 
-• Works great on mobiles
-• Responsive design
-• Fully styleable (it's easy!)
-• Well-documented
-• Very easy to use
-• Can contain any content (images, text, video, complex layouts)
-• Opened Folder can be linked to from other pages
-• Configurable position changes for nth folder
+• Works great on mobiles  
+• Responsive design  
+• Fully styleable (it's easy!)  
+• Well-documented  
+• Very easy to use  
+• Can contain any content (images, text, video, complex layouts)  
+• Opened Folder can be linked to from other pages  
+• Configurable position changes for nth folder  
 
 
 ===========
 
 How to implement:
 
-1. Include the following script within a <script> tag.
+1. Include the following script within a <script> tag.  
 
 	$(function() {
 		$('.app-folders-container').appFolders();
 	});
 							
-2. Then, include the following elements:
+2. Then, include the following elements:  
 
 	<!--This is what you call in the function above-->
 	<div class="app-folders-container"> 
@@ -62,7 +62,7 @@ How to implement:
 
 OPTIONS
 
-You can pass these options through when you call the function:
+You can pass these options through when you call the function:  
 
 	$('.app-folders-container').appFolders({
 	
