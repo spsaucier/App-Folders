@@ -123,7 +123,7 @@
 					// Set the URL Title to match the opened folder.
 					// Pushstate only works in modern browsers, but it works with browser history as well.
 					// This is optional and removes the trailing hash (#) from the URL.
-					window.location.hash="";
+//					window.location.hash="";
 					if (settings.URLrewrite != false) {
 						window.history.pushState("object or string","Title" , settings.URLbase);
 					}
