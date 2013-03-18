@@ -87,9 +87,9 @@
 //--to keep it from scrolling to it
 					var hash = $(clickedFolder).attr('id');
 					var node = $( '#' + hash );
-					// if ( node.length ) {
-					//	node.attr( 'id', '' );
-					// }
+					if ( node.length ) {
+						node.attr( 'id', '' );
+					}
 					document.location.hash = hash;
 					if ( node.length ) {
 						node.attr( 'id', hash );
@@ -157,6 +157,7 @@
 							document.location.hash = hash;
 							if ( node.length ) {
 								node.attr( 'id', hash );
+							}
 
 							// Set the margin top to the correct value for the newly clicked folder - See line 69
 							if( settings.marginTopAdjust === false) {
@@ -178,24 +179,17 @@
 											
 							//Reset the margin-top for the container
 							$(this).parent().parent().animate({ marginTop: settings.marginTopBase }, settings.animationSpeed );
-							
 
-							// Set the URL Title to match the opened folder.
-							// Pushstate only works in modern browsers, but it works with browser history as well.
-							// This is optional and removes the trailing hash (#) from the URL.
-							// window.location.hash=""; // Solves issue with jumping to the top
-							if (settings.URLrewrite != false) {
-								window.history.pushState("object or string","Title" , settings.URLbase);
-							}
 						}
 					}
 				}
 				
 				event.preventDefault();
+				return false;
 			});
 
 			// close button
-			$('.close').click(function(){
+			$('.jaf-close').click(function(){
 
 				$(".folder").removeClass("active-tool");
 				$(this).parent().slideToggle(settings.animationSpeed);
